@@ -1,9 +1,22 @@
 ---
+import ProjectCard from '../components/ProjectCard.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to Astro!</h1>
-	</main>
+<Layout title="Home">
+	<header class="bg-slate-900 text-white py-32">
+		<div class="flex flex-col gap-3 justify-center container mx-auto px-4 sm:px-0">
+			<h1 class="text-5xl md:text-8xl">Corey McCormick</h1>
+			<h2 class="text-2xl md:text-3xl">Web developer and designer</h2>
+		</div>
+		
+	</header>
+	<section class="bg-slate-700 py-8">
+		<h3 class="text-3xl text-center">Recent Projects</h3>
+		<div class="grid md:grid-cols-3 container gap-3 mx-auto px-4 sm:px-0">
+			<ProjectCard title="Test Project" abstract="A rough overview" url="" />
+			<ProjectCard title="Test Project" abstract="A rough overview" url="" />
+			<ProjectCard title="Test Project" abstract="A rough overview" url="" />
+		</div>
+	</section>
 </Layout>

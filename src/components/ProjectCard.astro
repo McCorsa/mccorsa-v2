@@ -1,0 +1,17 @@
+---
+export interface Props {
+    title: string;
+    abstract: string;
+    url: string;
+}
+
+const { title, abstract, url } = Astro.props;
+---
+
+<div class="bg-white shadow rounded flex flex-col gap-2">
+    <main class="flex flex-col gap-2 p-4">
+        <h4 class="text-xl font-bold">{title}</h4>
+        <p>{abstract}</p>
+        <a href="{{url}}" class="bg-blue-700 text-white px-4 py-2 w-fit">Read more</a>
+    </main>
+</div>
