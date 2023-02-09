@@ -4,20 +4,43 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-	<header
-		class="text-white h-screen flex flex-col justify-center items-center px-12 gap-4"
-	>
-		<p class="text-3xl">G'day! My name is</p>
-		<h1 class="text-9xl font-bold text-cyan-300">Corey McCormick</h1>
-		<h3 class="text-2xl font-light tracking-widest">
+	<header class="text-white h-screen flex flex-col justify-center items-center px-12 gap-1 lg:gap-8">
+		<p class="text-xl lg:text-3xl">G'day! My name is</p>
+		<h1 class="text-5xl lg:text-9xl font-bold text-cyan-300 text-center">Corey McCormick</h1>
+		<h3 class="text-2xl lg:text-4xl font-light lg:tracking-widest">
 			Web Developer / Designer
 		</h3>
-		<a
-			href=""
-			class="shadow-md hover:shadow-lg hover:shadow-cyan-300 transition shadow-cyan-300 text-sm text-cyan-300 border border-cyan-300 w-fit px-6 py-2"
-			>Contact me</a
-		>
+		<div class="flex flex-row gap-3">
+			<div class="bg-orange-800 p-2 rounded">Svelte</div>
+			<div class="bg-blue-500 p-2 rounded">React</div>
+			<div class="bg-green-600 p-2 rounded">Vue</div>
+			<div class="bg-purple-500 p-2 rounded">C#</div>
+		</div>
 	</header>
+	<main class="bg-slate-900 text-white">
+		<section class="flex flex-col container mx-auto items-center py-4">
+			<h1 class="text-3xl font-extrabold">My Specialities</h1>
+			<div class="grid grid-cols-3 w-full gap-10 p-4">
+				<div class="bg-slate-700 rounded-lg p-3 text-center">
+					<h3 class="text-lg font-semibold border-b-black border-b-2">Front-End</h3>
+					<p>Svelte</p>
+					<p>React</p>
+					<p>Vue</p>
+				</div>
+				<div class="bg-slate-700 rounded-lg p-3 text-center">
+					<h3 class="text-lg font-semibold border-b-black border-b-2">Back-End</h3>
+					<p>Django</p>
+					<p>Supabase</p>
+				</div>
+				<div class="bg-slate-700 rounded-lg p-3 text-center">
+					<h3 class="text-lg font-semibold border-b-black border-b-2">UI/UX Design</h3>
+					<p>Figma</p>
+					<p>Adobe XD</p>
+				</div>
+			</div>
+		</section>
+		
+	</main>
 </Layout>
 
 <style>
