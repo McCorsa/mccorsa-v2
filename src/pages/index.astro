@@ -4,46 +4,26 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-	<div class="flex">
-		<aside class="sticky top-0 w-16 bg-blue-500 h-screen">test</aside>
-		<div class="flex-auto">
-			<header class="text-white h-screen flex flex-col justify-center items-center px-12 gap-1 lg:gap-8">
-				<p class="text-xl lg:text-3xl">G'day! My name is</p>
-				<h1 class="text-5xl lg:text-9xl font-bold text-cyan-300 text-center">Corey McCormick</h1>
-				<h3 class="text-2xl lg:text-4xl font-light lg:tracking-widest">
-					Web Developer / Designer
-				</h3>
-				<div class="flex flex-row gap-3">
-					<div class="bg-orange-800 p-2 rounded">Svelte</div>
-					<div class="bg-blue-500 p-2 rounded">React</div>
-					<div class="bg-green-600 p-2 rounded">Vue</div>
-					<div class="bg-purple-500 p-2 rounded">C#</div>
-				</div>
-			</header>
-			<main class="bg-slate-900 text-white">
-				<section class="flex flex-col container mx-auto items-center py-4">
-					<h1 class="text-3xl font-extrabold">My Specialities</h1>
-					<div class="grid grid-cols-3 w-full gap-10 p-4">
-						<div class="bg-slate-700 rounded-lg p-3 text-center">
-							<h3 class="text-lg font-semibold border-b-black border-b-2">Front-End</h3>
-							<p>Svelte</p>
-							<p>React</p>
-							<p>Vue</p>
-						</div>
-						<div class="bg-slate-700 rounded-lg p-3 text-center">
-							<h3 class="text-lg font-semibold border-b-black border-b-2">Back-End</h3>
-							<p>Django</p>
-							<p>Supabase</p>
-						</div>
-						<div class="bg-slate-700 rounded-lg p-3 text-center">
-							<h3 class="text-lg font-semibold border-b-black border-b-2">UI/UX Design</h3>
-							<p>Figma</p>
-							<p>Adobe XD</p>
-						</div>
-					</div>
-				</section>
-			</main>
-		</div>
+	<div class="flex flex-col md:flex-row h-screen">
+		<aside class="md:sticky order-last md:order-1 bottom-0 bg-blue-900 md:h-screen flex flex-row md:flex-col justify-center">
+			<a class="h-24 w-24 bg-blue-400 hover:bg-blue-300 border border-blue-700 flex justify-center items-center">i</a>
+			<a class="h-24 w-24 bg-blue-400 hover:bg-blue-300 border border-blue-700 flex justify-center items-center">i</a>
+			<a class="h-24 w-24 bg-blue-400 hover:bg-blue-300 border border-blue-700 flex justify-center items-center">i</a>
+			<a class="h-24 w-24 bg-blue-400 hover:bg-blue-300 border border-blue-700 flex justify-center items-center">i</a>
+		</aside>
+		<header class="flex-auto order-1 md:order-2 text-white md:h-screen flex flex-col justify-center items-center px-12 gap-1 lg:gap-8">
+			<p class="text-xl lg:text-3xl">G'day! My name is</p>
+			<h1 class="text-5xl lg:text-9xl font-bold text-cyan-300 text-center">Corey McCormick</h1>
+			<h3 class="text-2xl lg:text-4xl font-light lg:tracking-widest">
+				Web Developer / Designer
+			</h3>
+			<div class="flex flex-row gap-3">
+				<div class="bg-orange-800 p-2 rounded">Svelte</div>
+				<div class="bg-blue-500 p-2 rounded">React</div>
+				<div class="bg-green-600 p-2 rounded">Vue</div>
+				<div class="bg-purple-500 p-2 rounded">C#</div>
+			</div>
+		</header>
 	</div>
 	
 	
