@@ -1,0 +1,20 @@
+---
+export interface Props {
+    href: string;
+}
+
+const {href} = Astro.props;
+
+var style = "h-24 w-24 border-4 rounded-2xl hover:border-cyan-500 hover:text-cyan-500 flex justify-center items-center ";
+
+if (href == Astro.url.pathname) {
+    style += "border-cyan-500 text-cyan-500"
+} else {
+    style += "border-cyan-700 text-cyan-700"
+}
+---
+
+
+<a class={style} href={href}>
+    <slot />	
+</a>
