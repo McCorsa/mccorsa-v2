@@ -4,17 +4,17 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-	<p class="text-xl lg:text-3xl">G'day! My name is</p>
-	<h1 class="text-5xl lg:text-9xl font-bold text-cyan-300 text-center">Corey McCormick</h1>
-	<h3 class="text-2xl lg:text-4xl font-light lg:tracking-widest">
-		Web Developer / Designer
-	</h3>
-	<div class="flex flex-row gap-3">
-		<div class="bg-orange-800 p-2 rounded">Svelte</div>
-		<div class="bg-blue-500 p-2 rounded">React</div>
-		<div class="bg-green-600 p-2 rounded">Vue</div>
-		<div class="bg-purple-500 p-2 rounded">C#</div>
-	</div>
+	<section class="container mx-auto md:px-32 flex flex-col h-screen justify-center gap-2">
+		<p class="text-xl lg:text-lg text-cyan-600">G'day! My name is</p>
+		<h1 class="text-5xl lg:text-7xl font-bold">Corey McCormick</h1>
+		<h3 class="text-xl lg:text-2xl font-light md:w-1/2 text-cyan-300">
+			I am a web application designer and developer. I am also a UX researcher.
+		</h3>
+		<div class="mt-6"><a href="/" class="border border-cyan-300 text-cyan-300 p-3">My Portfolio</a></div>
+	</section>
+	<section class="container mx-auto text-cyan-600 py-3">
+		<h2 class="text-4xl font-semibold">My Recent Projects</h2>
+	</section>
 </Layout>
 
 
