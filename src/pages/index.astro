@@ -4,16 +4,44 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-	<section class="container mx-auto md:px-32 flex flex-col h-screen justify-center gap-2">
+	<section class="container mx-auto px-4 md:px-32 flex flex-col h-screen justify-center gap-2">
 		<p class="text-xl lg:text-lg text-cyan-600">G'day! My name is</p>
-		<h1 class="text-5xl lg:text-7xl font-bold">Corey McCormick</h1>
-		<h3 class="text-xl lg:text-2xl font-light md:w-1/2 text-cyan-300">
-			I am a web application designer and developer. I am also a UX researcher.
-		</h3>
+		<h1 class="text-5xl lg:text-8xl font-bold">Corey McCormick</h1>
+		<h2 class="text-4xl lg:text-6xl text-cyan-600 font-semibold">I'm an app developer and designer</h2>
 		<div class="mt-6"><a href="/" class="border border-cyan-300 text-cyan-300 p-3">My Portfolio</a></div>
 	</section>
-	<section class="container mx-auto text-cyan-600 py-3">
-		<h2 class="text-4xl font-semibold">My Recent Projects</h2>
+	<section class="container mx-auto px-2 md:px-32 py-4 flex flex-col md:flex-row items-center gap-3">
+		<div class="grow">
+			<h2 class="text-2xl p-3 bg-cyan-700 rounded-lg">About Me</h2>
+			<p class="p-3">
+				I am currently in my second year of studying a Bachelor of Information Technology majoring
+				in information systems. I am passionate about seeing technology used for good and being
+				a tool for good rather than a necessary evil in our world.
+			</p>
+			<p class="px-3 py-1 font-semibold">My Favourite Technologies:</p>
+			<div class="flex flex-row font-sm gap-3 px-3">
+				<div class="bg-blue-400 p-2 rounded-lg">TypeScript</div>
+				<div class="bg-orange-400 p-2 rounded-lg">Svelte</div>
+				<div class="bg-green-700 p-2 rounded-lg">Python</div>
+				<div class="bg-green-500 p-2 rounded-lg">Supabase</div>
+			</div>
+		</div>
+		<div class="rounded-xl bg-white shadow text-black p-2 text-center flex-auto -order-1 md:order-1 md:w-2/3">
+			<div class="bg-cyan-300 p-1 rounded-xl">
+				<img src="./avatar.png" class="w-1/3 mx-auto"/>
+			</div>
+			<p class="font-bold text-xl">Corey McCormick</p>
+			<p>Software engineer and designer</p>
+			<p class="py-2 text-sm">Expiry: 26/05/2104</p>
+		</div>
+	</section>
+	<section class="container mx-auto px-2 md:px-32 py-4">
+		<h2 class="text-2xl p-3 bg-cyan-700 rounded-lg">My Recent Projects</h2>
+		<div class="grid md:grid-cols-3 gap-2 py-4">
+			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
+			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
+			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
+		</div>
 	</section>
 </Layout>
 

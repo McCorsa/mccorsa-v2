@@ -3,15 +3,16 @@ export interface Props {
     title: string;
     abstract: string;
     url: string;
+    image_url: string;
 }
 
-const { title, abstract, url } = Astro.props;
+const { title, abstract, url, image_url } = Astro.props;
 ---
 
-<div class="bg-white shadow rounded flex flex-col gap-2 text-black">
-    <main class="flex flex-col gap-2 p-4">
+<div class="bg-cyan-900 hover:bg-cyan-700 text-white shadow rounded flex flex-col gap-2">
+    <a class="flex flex-col gap-2 p-2" href={url}>
+        <img src={image_url} alt="" class="w-full h-40 object-cover">
         <h4 class="text-xl font-bold">{title}</h4>
         <p>{abstract}</p>
-        <a href="{{url}}" class="bg-blue-700 text-white px-4 py-2 w-fit">Read more</a>
-    </main>
+    </a>
 </div>
