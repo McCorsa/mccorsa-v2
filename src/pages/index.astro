@@ -1,5 +1,6 @@
 ---
 import ProjectCard from "../components/ProjectCard.astro";
+import ProjectRow from "../components/ProjectRow.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -35,12 +36,12 @@ import Layout from "../layouts/Layout.astro";
 			<p class="py-2 text-sm pb-12">Expiry: 26/05/2104</p>
 		</div>
 	</section>
-	<section class="container mx-auto px-2 md:px-32 h-screen">
+	<section class="container mx-auto px-2 md:px-32 min-h-screen">
 		<h2 class="text-4xl text-cyan-300 rounded-lg font-bold">My Recent Projects</h2>
-		<div class="grid md:grid-cols-3 gap-2 py-4">
-			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
-			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
-			<ProjectCard title="Project" abstract="" url="" image_url="./avatar.png"></ProjectCard>
+		<div class="flex flex-col">
+			<ProjectRow title="My Redesigned Portfolio" img_url="./avatar.png"></ProjectRow>
+			<ProjectRow title="Digital Self-Care Research Project" img_url="./avatar.png" alternate></ProjectRow>
+			<ProjectRow title="Designing a Better Canvas" img_url="./avatar.png"></ProjectRow>
 		</div>
 	</section>
 	<div class="section container mx-auto px-2 md:px-32 py-24">
